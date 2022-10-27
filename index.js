@@ -69,35 +69,35 @@ const player = new Fighter({
   scale: 2.75,
   sprites: {
     idle: {
-      imageSrc: "./assets/Paladin/Idle.png",
-      framesMax: 6,
+      imageSrc: "./assets/Paladin/Idle2.png",
+      framesMax: 5,
     },
     run: {
-      imageSrc: "./assets/Paladin/Run.png",
+      imageSrc: "./assets/Paladin/Run2.png",
       framesMax: 5,
     },
     jump: {
-      imageSrc: "./assets/Paladin/Jump.png",
+      imageSrc: "./assets/Paladin/Jump2.png",
       framesMax: 1,
     },
     fall: {
-      imageSrc: "./assets/Paladin/Fall.png",
-      framesMax: 5,
+      imageSrc: "./assets/Paladin/Fall2.png",
+      framesMax: 1,
     },
     attack1: {
-      imageSrc: "./assets/Paladin/Attack.png",
-      framesMax: 11,
+      imageSrc: "./assets/Paladin/Attack2.png",
+      framesMax: 10,
     },
     takeHit: {
-      imageSrc: "./assets/Paladin/Hit.png",
+      imageSrc: "./assets/Paladin/Hit2.png",
       framesMax: 2,
     },
     death: {
-      imageSrc: "./assets/Paladin/Death.png",
+      imageSrc: "./assets/Paladin/Death2.png",
       framesMax: 2,
     },
   },
-  attackFrame: 5,
+  attackFrame: 4,
   attackBox: {
     offset: {
       x: 100,
