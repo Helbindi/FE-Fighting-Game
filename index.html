@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fire Emblem Arena</title>
+    <link rel="shortcut icon" href="/assets/sword.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- Help Window -->
+    <section class="help" aria-expanded="false">
+      <button class="btn btn-close">X</button>
+      <div class="help-header">
+        Player 1
+        <ul class="help-controls">
+          <li>W = Jump</li>
+          <li>A = Left</li>
+          <li>S = Right</li>
+          <li>Spacebar = Attack</li>
+        </ul>
+      </div>
+      <div class="help-header">
+        Player 2
+        <ul class="help-controls">
+          <li>&#8593 = Jump</li>
+          <li>&#8592 = Left</li>
+          <li>&#8594 = Right</li>
+          <li>&#8595 = Attack</li>
+        </ul>
+      </div>
+    </section>
+    <button class="btn btn-help">?</button>
+
+    <!-- Game Window -->
+    <section class="container">
+      <!-- Game UI -->
+      <div class="gameUI">
+        <!-- Player HP -->
+        <div class="playerHP">
+          <div class="health-bg"></div>
+          <div class="playerHealth" id="playerHealth"></div>
+        </div>
+        <!-- Timer -->
+        <div class="timer" id="timer"></div>
+        <!-- Enemy HP -->
+        <div class="enemyHP">
+          <div class="health-bg"></div>
+          <div class="enemyHealth" id="enemyHealth"></div>
+        </div>
+      </div>
+
+      <!-- Game Over Promt -->
+      <div class="displayText" id="displayText"></div>
+
+      <!-- Quotes -->
+      <section class="quotePromt">
+        <div class="quoteText quote-p1">
+          <img src="/assets/Paladin/profile.png" alt="Seth">
+          <p></p>
+        </div>
+        <div class="quoteText quote-p2">
+          <img src="/assets/General/profile.png" alt="Tirado">
+          <p></p>
+        </div>
+      </section>
+
+      <!-- Animation Canvas -->
+      <canvas></canvas>
+    </section>
+
+    <script src="js/classes.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="index.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+      integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>
