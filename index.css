@@ -9,7 +9,7 @@ body {
   align-items: center;
   justify-content: center;
 
-  background-image: url("/assets/FE_Map.png");
+  background-image: url("./assets/FE_Map.png");
   background-size: cover;
   background-position: center;
 
