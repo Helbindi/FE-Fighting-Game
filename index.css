@@ -34,6 +34,7 @@ body {
   min-width: 500px;
   min-height: 400px;
 
+  background-color: gray;
   background-image: url("./assets/paper.png");
   background-repeat: no-repeat;
   background-size: cover;
