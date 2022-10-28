@@ -20,7 +20,7 @@ function determineWinner({ player, enemy, timerId }) {
     "“Very... Impressive... However... I expect you'll wish you'd died here on my steel. Lord Valter is...not nearly as merciful as I...”";
 
   if (player.health === enemy.health) {
-    document.querySelector("#displayText").innerHTML = "Tie";
+    document.querySelector("#displayText").textContent = "Tie";
     p1.style.display = "flex";
     p2.style.display = "flex";
 
@@ -28,13 +28,13 @@ function determineWinner({ player, enemy, timerId }) {
     enemy.switchSprite("death");
   }
   if (player.health > enemy.health) {
-    document.querySelector("#displayText").innerHTML = "Seth Wins";
+    document.querySelector("#displayText").textContent = "Seth Wins";
     p2.style.display = "flex";
 
     enemy.switchSprite("death");
   }
   if (player.health < enemy.health) {
-    document.querySelector("#displayText").innerHTML = "Tirado Wins";
+    document.querySelector("#displayText").textContent = "Tirado Wins";
     p1.style.display = "flex";
 
     player.switchSprite("death");

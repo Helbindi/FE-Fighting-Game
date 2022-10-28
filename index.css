@@ -208,8 +208,42 @@ li {
   align-items: center;
   justify-content: center;
   gap: 1em;
+
+  animation: fade-in 1500ms forwards;
 }
 
 .quote-p2 {
   flex-direction: row-reverse;
+}
+
+/* Animations */
+.help[aria-expanded="true"] {
+  animation: slide-up 1000ms forwards, fade-in 500ms forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
 }
