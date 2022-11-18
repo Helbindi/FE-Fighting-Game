@@ -402,3 +402,17 @@ window.addEventListener(
   },
   false
 );
+
+// HP Tick Marks
+const playerTick = document.getElementById("playerTicks");
+const enemyTick = document.getElementById("enemyTicks");
+
+for (let index = 0; index < 50; index++) {
+  let tick1 = document.createElement("div");
+  tick1.className = "tick";
+  playerTick.appendChild(tick1);
+
+  let tick2 = document.createElement("div");
+  tick2.className = "tick";
+  enemyTick.appendChild(tick2);
+}
