@@ -77,47 +77,81 @@ li {
   padding: 1em;
 }
 
+.btn-group {
+  position: absolute;
+  bottom: 15px;
+  left: 25px;
+
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  align-items: center;
+  justify-content: center;
+}
+
 .btn {
   width: 50px;
   height: 50px;
+  border-radius: 2em;
+  font-size: 1.25em;
 
   text-decoration: none;
   background: transparent;
   border: none;
+
+  background-color: black;
+  color: white;
 }
 
 .btn:hover {
   cursor: pointer;
+  color: #fa617d;
+  z-index: 10;
 }
 
 .btn-close {
   position: absolute;
   top: 5px;
   right: 5px;
-  font-size: 1.25em;
+
+  background-color: transparent !important;
+  color: black;
 }
 
-.btn-close:hover {
-  color: #fa617d;
-  scale: 1.25;
-}
+.btn-audio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
 
-.btn-help {
-  position: absolute;
-  color: white;
-  bottom: 20px;
-  left: 20px;
-  font-size: 1.25em;
+  cursor: pointer;
 
   background-color: black;
   border-radius: 2em;
+  padding: 13px;
 }
 
-.btn-help:hover {
-  color: #fa617d;
-  scale: 1.25;
+.btn-audio:hover {
+  z-index: 10;
 }
 
+.audio-icon {
+  width: 22px;
+}
+
+.bgm-audio {
+  display: none;
+  height: 30px;
+}
+
+@media (max-height: 750px) {
+  .btn-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* Game CSS */
 .gameUI {
   position: absolute;
   display: flex;

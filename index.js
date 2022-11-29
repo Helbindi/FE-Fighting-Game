@@ -416,3 +416,15 @@ for (let index = 0; index < 50; index++) {
   tick2.className = "tick";
   enemyTick.appendChild(tick2);
 }
+
+// Audio
+let bgm = document.getElementById("bgm-audio");
+let toggle = document.getElementById("mute-toggle");
+
+toggle.addEventListener("mouseover", () => {
+  bgm.style.display = "block";
+});
+
+toggle.addEventListener("mouseout", () => {
+  bgm.style.display = "none";
+});

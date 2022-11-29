@@ -64,5 +64,9 @@ closeBtn.addEventListener("click", () => {
 });
 
 helpBtn.addEventListener("click", () => {
-  visible.ariaExpanded = true;
+  if (visible.ariaExpanded === "false") {
+    visible.ariaExpanded = true;
+  } else {
+    visible.ariaExpanded = false;
+  }
 });

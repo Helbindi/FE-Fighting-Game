@@ -38,7 +38,17 @@
         </ul>
       </div>
     </section>
-    <button class="btn btn-help">?</button>
+
+    <!-- Buttons -->
+    <div class="btn-group">
+      <button class="btn btn-help">?</button>
+      <div class="btn-audio" id="mute-toggle">
+        <img class="audio-icon" src="./assets/music-icon.png" alt="music-icon">
+        <audio class="bgm-audio" id="bgm-audio" controls loop autoplay muted>
+            <source src="./assets/attack-bgm.mp3" type="audio/mpeg">
+          </audio>
+      </div>
+    </div>
 
     <!-- Game Window -->
     <section class="container">
